@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="preload" as="image" href="/img/hero-img.png" fetchpriority="high" />
 	</head>
 
 	<body>
@@ -31,7 +32,7 @@
 			</header>
 			<section class="exp__spacer"></section>
 			<section class="hero">
-				<video poster="img/hero-img.png" src="img/hero-video.mp4" playsinline muted autoplay loop class="hero__bg"></video>
+				<video poster="img/hero-img.png" src="img/hero-video.mp4" playsinline muted autoplay loop class="hero__bg" fetchpriority="high"></video>
 				<div class="container">
 					<div class="hero__inner">
 						<h1 class="hero__title">Exclusive experiences, <span>crafted by people who know and love</span> Madeira</h1>
@@ -358,24 +359,5 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 		<script src="/js/main.js"></script>
-		<script>
-			// cards.forEach((card, i) => {
-			// 	gsap.fromTo(
-			// 		card,
-			// 		{ opacity: 0, y: 0 },
-			// 		{
-			// 			opacity: 1,
-			// 			y: 0,
-			// 			ease: 'none',
-			// 			scrollTrigger: {
-			// 				trigger: '.slider',
-			// 				start: () => `bottom+=${(i - 1) * 200 - 600} 100%`, // Staggered start based on card index
-			// 				end: () => `top+=${(i - 1) * 200 - 600} 0%`, // End position for animation
-			// 				scrub: true, // Ties animation progress to scroll position
-			// 			},
-			// 		}
-			// 	)
-			// })
-		</script>
 	</body>
 </html>
